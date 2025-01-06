@@ -333,6 +333,10 @@ footer {
         display: block;
     }
     
+    .element button{
+        width: 300px;
+    }
+
     form input, 
     form textarea,
     form button {
