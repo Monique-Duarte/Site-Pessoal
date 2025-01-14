@@ -29,9 +29,9 @@ header {
     width: 100%;
     margin-bottom: 2em;
     padding: 1%;
-    position: fixed;
     top: 0;
     left: 0;
+    position: fixed;
 }
 
 .titulo {
@@ -39,8 +39,10 @@ header {
 }
 
 .header-container {
+    display: flex;
     width: 100%;
     margin: 0 auto;
+    justify-content: left;
 }
 
 .logo img {
@@ -50,31 +52,42 @@ header {
     width: 30%;
 }
 
+.logo{
+    max-width: 30%;
+}
+
+nav {
+    display: none;
+}
 
 .menu li a {
-    color: #ecf0f1;
+    color: white;
     text-decoration: none;
-    display: block;
     padding: 0px;
     margin-left: 50px;
 }
 
-.botao-menu {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 120px;
-}
-
-nav {
-    width: 50%;
-}
-
-header li {
-    display: inline;
+nav ul {
+    list-style: none;
+    display: block;
     margin-left: 16px;
     font-size: 18px;
     color: #ecf0f1;
+    position: relative;
+}
+
+.menu h1{
+    font-size: 1.5em;
+    right: 12px;
+    position: fixed;
+}
+
+.menu button{
+    width: 200px;
+    position: fixed;
+    align-items: center;
+    right: 16px;
+    top: 16px;
 }
 
 .container {
@@ -250,44 +263,61 @@ footer {
 
 
 @media screen and (max-width: 640px) {
-    .container{
+    .container {
         max-width: 90%;
         width: 100%;
     }
 
-    header{
+    header {
         max-width: 100%;
     }
 
-    .logo img{
-        width: 60px;
+    .logo img {
+        width: 100%;
         margin-right: 16px;
     }
 
-    .botao-menu {
-        position: absolute;
-        top: 0px;
-        right: 0;
-        width: 70px;
-        padding: 0px;
+    .titulo {
+        width: 50%;
+    }
+
+    
+    nav ul a {
+        list-style: none;
+        display: grid;
+        margin-left: 16px;
+        font-size: 18px;
+        color: #ecf0f1;
+        position: relative;
+        font-size: 0.6em;
+        padding: 0;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 36px;
+        margin-left: 0;
+        padding-top: 0%;
+        height: 30%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .menu h1{
+        font-size: 1.5em;
+        right: 12px;
+        position: fixed;
+    }
+    
+    .menu button{
+        width: 60px;
+        position: fixed;
+        align-items: baseline;
+        right: 6px;
+        top: 6px;
+        padding: 6px;
         font-size: 0.8em;
     }
-
-    button{
-        margin: 0 0;
-        margin-bottom: 12px;
-    }
-
-    header li {
-        top: 21px;
-        display: flex;
-        padding: 0px;
-        color: #ecf0f1;
-        text-align: center;
-        font-size: 0.6em;
-        margin-left: -40px;
-    }
-
     .about-section {
         width: 80%;
         margin: 56px auto;
@@ -394,6 +424,10 @@ footer {
         align-items: center;
         position: relative;
     }
+
+    .titulo h1 {
+        width: 50%;
+    }
     
     .logo img {
         display: flex;
@@ -406,12 +440,21 @@ footer {
         position: absolute;
         top: 0px;
         right: 0px;
-        width: 70px;
+        width: 40px;
     }
 
-    .botao-menu button{
-        font-size: 0.5em;
+    .menu button{
+        font-size: 1em;
         padding: 2px;
+        width: 100px;
+        top: 12px;
+    }
+
+    nav ul {
+        display: inline;
+        margin-top: 50px;
+        height: 50;
+        font-size: 0.8em;
     }
 
     .titulo {

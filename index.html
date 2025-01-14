@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neko Shop - A sua loja de gatinhos</title>
+    <title>Game Shop - A sua loja de jogos</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +17,15 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="./imagens/Gato fundo - Copia2.png" alt="logo gato">
+                <img src="./imagens/logo.png" alt="logo gato">
             </div>
-                <div class="titulo">
-                    <h1>Neko Shop</h1>
-                </div>
-                <div class="botao-menu titulo">
-                    <button type="button">
-                    <h1>MENU</h1></button>
-                </div>
+            <div class="titulo">
+                <h1>Game Shop</h1>
+            </div>
+            <div class="menu titulo">
+                <button class="menu">MENU</button>
                 <nav>
-                    <ul class= "menu" id="menu">
+                    <ul>
                         <li>
                             <a href="#about"> Sobre a loja</a>
                         </li>
@@ -39,15 +37,15 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
         </div>
     </header>
     <section id="about" class="container about-section">
-        <img class="store-front" src="/imagens/Gato fundo - Copia2.png" alt="gato laranja, logo Neko Shop"/>
+        <img class="store-front" src="/imagens/logo.png" alt="gato laranja, logo Neko Shop"/>
         <div class="about-text">
-            <h3>Sobre a Neko Shop</h3>
+            <h3>Sobre a Game Shop</h3>
                 <p>Site projeto para fim de desenvolvimento profissional na área de Front-and. </p> </br>
-                <p> A loja surgiu de uma profunda paixão por felinos, especialmente pelos adoráveis gatos pretos, que muitas vezes são injustamente associados ao azar, mas que, na verdade, nos presenteiam com sorte, amor e companheirismo. 
-                    Essa paixão vai muito além de simplesmente cuidar desses animais especiais. Para quem procura produtos inspirados neles, este é o lugar ideal para celebrar o amor por esses companheiros incríveis.
+                <p> Neste site, você encontrará um ambiente dedicado ao meu crescimento e aprendizado na área de tecnologia. Aqui, compartilho um de meus projetos e experiência adquirida ao longo da minha jornada. Meu objetivo é explorar novas tecnologias, aprimorar minhas habilidades e contribuir com a comunidade de desenvolvedores.
                 </p>
         </div>
     </section>
@@ -55,31 +53,31 @@
         <h2 class="container">Produtos</h2>
         <div class="container products">
             <div class="element">
-            <img src="./imagens/caneca.jpeg" alt="CANECA FELINO" />
-                <p class="titulo">CANECA FELINO</p>
-                <p class="container descricao">Caneca com miniatura felina interna</p>
-                <p class="titulo">R$ 85,00</p>
+            <img src="./imagens/gif.gif" alt="FELINO" />
+                <p class="titulo"> FELINO</p>
+                <p class="container descricao">Descrição</p>
+                <p class="titulo">R$ 100,00</p>
                 <button type="button">Adicionar ao carrinho</button>
             </div>
             <div class="element">
-            <img src="./imagens/camiseta.jpeg" alt="CAMISETA YIN YANG" />
-                <p class="titulo">CAMISETA YIN YANG</p>
-                <p class="container descricao">Camiseta estilo Yin Yang</p>
-                <p class="titulo">R$ 59,90</p>
+                <img src="./imagens/gif.gif" alt="FELINO" />
+                <p class="titulo"> FELINO</p>
+                <p class="container descricao">Descrição</p>
+                <p class="titulo">R$ 100,00</p>
                 <button type="button">Adicionar ao carrinho</button>
             </div>
             <div class="element">
-            <img src="./imagens/arranhador2.jpg" alt="ARRANHADOR" />
-                <p class="titulo">ARRANHADOR </p>
-                <p class="container descricao">Torre arranhador para gatos</p>
-                <p class="titulo">R$ 549,90</p>
+                <img src="./imagens/gif.gif" alt="FELINO" />
+                <p class="titulo"> FELINO</p>
+                <p class="container descricao">Descrição</p>
+                <p class="titulo">R$ 100,00</p>
                 <button type="button">Adicionar ao carrinho</button>
             </div>
             <div class="element">
-            <img src="./imagens/chinelo.jpeg" alt="Chinelo rosa felino" />
-                <p class="titulo">CHINELO DE GATO</p>
-                <p class="container descricao">Chinelo rosa de gatinho nº36</p>
-                <p class="titulo">R$ 87,90</p>
+                <img src="./imagens/gif.gif" alt="FELINO" />
+                <p class="titulo"> FELINO</p>
+                <p class="container descricao">Descrição</p>
+                <p class="titulo">R$ 100,00</p>
                 <button type="button">Adicionar ao carrinho</button>
             </div>
         </div>
@@ -126,7 +124,7 @@
     <footer>
         <div class="container">
         <p>
-            &copy; Neko Shop - Todos os direitos reservados - 2024
+            &copy; Game Shop - Todos os direitos reservados - 2024
         </p>
         </div>
     </footer>
@@ -136,13 +134,11 @@
     </a>
     <span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
     <div id="msg1" style="right: 90px; visibility: visible; background: #1EBC59; color: #fff; position: fixed; width: 200px; bottom: 52px; text-align: center; font-size: 13px; line-height: 31px; height: 32px; border-radius: 100px; z-index: 100; ">Fale conosco via Whatsapp</div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script>
             $(document).ready(function(){
-                $('.botao-menu button').click(function(){
-                    $('.menu').slideToggle();
+                $('.menu button').click(function(){
+                    $('nav').slideToggle();
                 })
             })
         </script>
