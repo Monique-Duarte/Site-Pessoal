@@ -71,9 +71,11 @@ nav ul {
     list-style: none;
     display: block;
     margin-left: 16px;
+    margin-right: 16px;
     font-size: 18px;
     color: #ecf0f1;
     position: relative;
+    font-size: 1em;
 }
 
 .menu h1{
@@ -83,11 +85,12 @@ nav ul {
 }
 
 .menu button{
-    width: 200px;
+    width: 100px;
     position: fixed;
     align-items: center;
     right: 16px;
     top: 16px;
+    font-size: 1.5em;
 }
 
 .container {
